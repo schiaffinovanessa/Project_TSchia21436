@@ -1,0 +1,275 @@
+.artA {
+    background-color: rgba(236, 216, 188, 0.959);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.artB {
+    padding: 10px;
+    position:relative;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Table pag 2 */
+
+#imatable {
+    width: 170px;
+    border-radius: 10px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    float:none;
+    
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.table1 {
+    display: none;
+}
+
+/*Grid1 pag2 */
+
+section.grid1{
+    display: grid;
+    grid-template-columns: 100px repeat(7,1fr);
+    grid-template-rows: repeat(19,23px);
+    padding:20px;
+    
+}
+
+.grid-111 {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    background-color: rgb(212, 192, 164);
+}
+
+.grid-222 {
+    grid-column: 1/8;
+    grid-row: 2/4;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-333 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+
+.grid-444 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+
+.grid-555 {
+    grid-column: 2/8;
+    grid-row: 4/6;
+}
+
+.grid-666 {
+    grid-column: 2/8;
+    grid-row: 6/8;
+}
+
+.grid-777 {
+    grid-column: 1/8;
+    grid-row: 8/10;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-888 {
+    grid-column: 1/2;
+    grid-row: 10/12;
+}
+
+.grid-999 {
+    grid-column: 1/2;
+    grid-row: 12/14;
+}
+
+.grid-101 {
+    grid-column: 2/8;
+    grid-row: 10/12;
+}
+
+.grid-102 {
+    grid-column: 2/8;
+    grid-row: 12/14;
+}
+
+.grid-103 {
+    grid-column: 1/8;
+    grid-row: 14/16;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-104 {
+    grid-column: 1/2;
+    grid-row: 16/18;
+}
+
+.grid-105 {
+    grid-column: 1/2;
+    grid-row: 18/20;
+}
+
+.grid-106 {
+    grid-column: 2/8;
+    grid-row: 16/18;
+}
+
+.grid-107 {
+    grid-column: 2/8;
+    grid-row: 18/20;
+}
+
+/*Grid pag2 */
+
+section.grid{
+    display: grid;
+    grid-template-columns: 100px repeat(7,1fr);
+    grid-template-rows: repeat(1323px);
+    padding:10px;
+ 
+}
+
+div[class^="grid-"]{
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+.grid-1 {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    background-color: rgb(212, 192, 164);
+}
+.grid-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+.grid-6 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+.grid-7 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+.grid-8 {
+    grid-column: 7/8;
+    grid-row: 2/3;
+    background-color: rgb(243, 214, 176);
+}
+
+.grid-9 {
+    grid-column: 1/8;
+    grid-row: 3/4;
+}
+
+.grid-10 {
+    grid-column: 1/8;
+    grid-row: 4/5;
+}
+
+.grid-11 {
+    grid-column: 1/8;
+    grid-row: 5/6;
+}
+.grid-12 {
+    grid-column: 1/8;
+    grid-row: 6/7;
+}
+.grid-13 {
+    grid-column: 1/8;
+    grid-row: 7/8;
+}
+.grid-14 {
+    grid-column: 1/8;
+    grid-row: 8/9;
+}
+.grid-15 {
+    grid-column: 1/8;
+    grid-row: 9/10;
+}
+.grid-16 {
+    grid-column: 1/8;
+    grid-row: 10/11;
+}
+.grid-17 {
+    grid-column: 1/8;
+    grid-row: 11/12;
+}
+.grid-18 {
+    grid-column: 1/8;
+    grid-row: 12/13;
+}
+
+
+/* Responsive*/
+
+@media only screen and (min-width: 720px){
+
+    .table1 {
+        display: block;
+    }
+
+    article > .grid1 {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 989px){
+
+    .artA {
+        float: left;
+        width: 40%;
+        background-color: rgba(236, 216, 188, 0.959);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    .artB {
+        float: left;
+        width: 55%;
+        padding: 10px;
+    }
+
+    article > .grid1 {
+        display: none;
+    }
+
+}

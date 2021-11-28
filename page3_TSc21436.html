@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Project</title>
+        <link href="css/css_TSc21436.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="author" content="Tania Schiaffino">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script/validation1_TSc21436.js"></script>
+        <script src="script/validation2_TSc21436.js"></script>
+
+    </head>
+
+ <body>
+  
+        <header>
+           <h1>VanBallSports</h1>
+        </header>
+
+        <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="page2_TSc21436.html">Information</a></li>
+               <li><a href="page3_TSc21436.html">Forms</a></li>
+
+            </ul>  
+       </nav>   
+       <form name="sportform" action='' method="get">
+       <fieldset>
+        <legend>Reservation of courts</legend>
+        
+        <div class="flex">
+            <label for="SName">Name</label>
+            <input type="text" name="SName" id="SName"  placeholder="Enter your name" required>                
+        </div>
+
+        <div class="flex">
+            <label for="SID">Identification (ID)</label>
+            <input type="text" name="SID" id="ID" size="8" maxlength="8" pattern="\d{8}" placeholder="nnnnnnnn" required>                
+        </div>
+
+        <div class="flex">
+            <label for="age">Age (18 to 50)</label>
+            <input type="number" name="age" id="age" min="18" max="50" step="1" required>                   
+        </div>
+
+        <div class="flex">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" size="12" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>                
+        </div>
+
+        <div class="flex">
+            <label for="SEmail">Email</label>
+            <input type="email" name="SEmail" id="SEmail"  placeholder="charlie56@gmail.com" required>                
+        </div>
+
+        <div class="flex"></div>
+        <span>Select field:
+            <span id="radio">
+            <input type="radio" id="field" name="field" value="" > Tennis
+            <input type="radio"  id="field" name="field" value="" > Soccer
+            <input type="radio"  id="field" name="field" value="" > Volleyball
+            </span>
+        </span>
+        </div>
+
+        <div class="flex">
+            <label for="Date & Time">Date</label>
+            <input type="datetime-local" name="Date" id="Date" min="Date.now()"  required>
+        </div>
+
+        <div class="flex">
+            <label for="payment" >Payment Method</label>
+            <select id="paymentlist"> 
+                <option>Cash</option>
+                <option>Etransfer</option>
+            </select>
+        </div>
+
+        <div class="flex" id="textarea"> 
+            <p>Additional information:</p>
+            <label for="text"></label>
+            <textarea name="action" id="text2" rows="3" >
+            </textarea>
+        </div>
+
+        <input type="submit" value="Reserve" onclick="runValidate(this.form)"> 
+        <input type="reset" value="Cancel">
+
+    </fieldset>
+    </form>
+
+
+    <form name="sportform" action='' method="get"></form>
+
+    <fieldset>
+        <legend>Registration</legend>
+        
+        <div class="flex">
+            <label for="SName">Name</label>
+            <input type="text" name="SName" id="SName"  placeholder="Enter your name" required>                
+        </div>
+
+        <div class="flex">
+            <label for="SID">Identification</label>
+            <input type="text" name="SID" id="ID" size="8" maxlength="8" pattern="\d{8}" placeholder="nnnnnnnn" required>                
+        </div>
+
+        <div class="flex">
+            <label for="age2">Age (10 to 25)</label>
+            <input type="number" name="age2" id="age2" min="10" max="25" step="1" required>                   
+        </div>
+
+        <div class="flex">
+            <label for="phone">Phone</label>
+            <input type="text" name="SID" id="phone" size="12" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>                
+        </div>
+
+        <div class="flex">
+            <label for="SEmail">Email</label>
+            <input type="email" name="SEmail" id="SEmail"  placeholder="charlie23@gmail.com" required>                
+        </div>
+
+        <div class="flex">
+            <label for="Sport">Sport(s)</label>
+            <select id="sportlist"> 
+                <option >Sport</option>
+                <option value>Tennis - $200</option>
+                <option value>Soccer - $180</option>
+                <option value>Volleyball - $150</option>
+                <option value>Tennis & Volleyball & Soccer - $500</option>
+                <option value>Tennis & Volleyball - $320</option>
+                <option value>Volleyball & Soccer - $310</option>
+                <option value> Tennis & Soccer - $360</option>
+            </select>
+        </div>
+
+        <div class="flex">
+        <span > Season classes:
+            <span id="radio">
+            <input type="radio"  name="Season" value="" > Winter 2021-2022
+            <input type="radio"  name="Season" value="" > Spring 2022
+            <input type="radio"  name="Season" value="" > Summer 2022
+            <input type="radio"  name="Season" value="" > Fall 2022
+            </span>
+        </span>
+        </div>
+
+        <div class="flex">
+            <label for="payment" >Payment Method</label>
+            <select id="payment" > 
+                <option value>Cash</option>
+                <option value>Etransfer</option>
+            </select>
+        </div>
+
+        <div class="flex" id="textarea">
+            <p>Additional information:</p>
+            <label for="text"></label>
+            <textarea name="action" id="text2" rows="3" >
+            </textarea>
+        </div>
+
+        <input type="submit" value="Register now" onclick="runValidate2(this.form)"> 
+        <input type="reset" value="Cancel">
+
+    </fieldset>
+
+    </form>
+
+        <footer>
+            <small>
+                <hr> 1250 Marine Drive 35500
+            </small>
+
+        </footer>
+    
+   </body>
+</html>
